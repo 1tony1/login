@@ -1,0 +1,111 @@
+@charset "utf-8";
+/*统一设置*/
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	height: 100%;
+}
+body{
+	height: calc(100% - 40px);
+}
+/*设置网页背景*/
+body {
+	background: url(images/main_bg.jpg) no-repeat;
+	background-size: 100% 100%;
+	padding-top: 40px;
+}
+/*登陆区主体*/
+#main{
+	width: 350px;
+	height: 600px;
+	background: #fff;
+	margin: 0 auto;
+	border-top: 8px solid #0cc;
+	border-radius: 5px;
+	position: relative;
+}
+
+/*头像区*/
+#header_border {
+	width: 198px;
+	height: 198px;
+	border-radius: 50%;
+	margin: 50px auto;
+	position: relative;
+	box-shadow: 0px 0px 10px #ccc;
+}
+#header_pic{
+	width: 184px;
+	height: 184px;
+	border-radius: 50%;
+	position: relative;
+	top: 7px;
+	left: 7px;
+	background: url(images/liudehua.jpg) no-repeat;
+	background-size: cover;
+}
+/*账号密码区*/
+#account{
+	width: 75%;
+	padding: 5px;
+	margin: 0 auto;
+	border-radius: 5px;
+	box-shadow: 1px 1px 5px 1px #CCCCCC;
+}
+#account .input{
+	line-height: 45px;
+	overflow: hidden;
+	font-size: 17px;
+	color: gray;
+}
+#account .input label{
+	float: left;
+	width: 30%;
+}
+#account .input input{
+	width: 70%;
+	height: 30px;
+	float: left;
+	border: none;
+	outline: none;
+	margin-top: 7.5px;
+	color: #0cc;
+}
+.border_bottom{
+	border-bottom: 1px solid #ccc;
+}
+.login_btn{
+	display: block;
+	width: calc(75% + 10px);
+	height: 40px;
+	margin: 30px auto;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	color: #FFFFFF;
+	font-size: 14px;
+	background: -webkit-linear-gradient(#00cccc,#00b0b0);
+	background: -moz-linear-gradient(#00cccc,#00b0b0);
+	box-shadow: 1px 1px 2px 1px #CCCCCC;
+	cursor: pointer;
+}
+.login_btn:active{
+	position: relative;
+	top: 2px;
+}
+
+/*登陆区底部*/
+#footer{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	line-height: 50px;
+	border-top: 1px solid #CCCCCC;
+}
+#footer a{
+	color: #999999;
+	text-decoration: none;
+}
